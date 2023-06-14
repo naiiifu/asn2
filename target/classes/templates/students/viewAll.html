@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <p> All Students </p>
+        <tr>
+            <th> SID </th>
+            <th> Name </th>
+            <th> Weight </th>
+            <th> Height </th>
+            <th> Hair Color </th>
+            <th> GPA </th>
+        </tr>
+        <tr th:each="student: ${stu}">
+            <td th:text="${student.sid}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.weight}"></td>
+            <td th:text="${student.height}"></td>
+            <td th:text="${student.haircolor}"></td>
+            <td th:text="${student.gpa}"></td>
+        </tr>
+    </table>
+    <a href="../index.html">Back to Index</a>
+    <a href="../del.html">Delete</a>
+    <a href="../add.html">Add</a>
+    <a href="../mod.html">Modify</a>
+</body>
+</html>
